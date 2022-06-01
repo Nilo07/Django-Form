@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+         
+        <h3>Registration</h3>
+        <form action="/registration" method="post">
+        {% csrf_token %}
+            <label for="">Username</label>
+            <input type="text" name="username" id="username" placeholder="Create an username (only letters and numbers)" required>
+            <br>
+
+
+            <label for="">First Name</label>
+            <input type="text" name="fname" id="fname" placeholder="Enter your first name" required>
+            <br>
+
+            <label for="">Last Name</label>
+            <input type="text" name="lname" id="lname" placeholder="Enter your last name" required>
+            <br>
+
+
+            <label for="">Phone No</label>
+            <input type="number" name="phoneno" id="phoneno" placeholder="Enter your phone no" required>
+            <br>
+
+
+            <label for="">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email address" optional>
+            <br>
+
+
+            <label for="">Password</label>
+            <input type="password" name="pass1" id="pass1" placeholder="Create your password" required>
+            <br>
+
+
+            <label for="">Confirm your Password</label>
+            <input type="password" name="pass2" id="pass2" placeholder="Confirm your password" required>
+            <br>
+
+
+            
+            <label for="">Address</label>
+            <input type="text" name="address" id="address"  required>
+            <br>
+
+            
+            <label for="">Pincode</label>
+            <input type="number" name="pincode" id="pincode"  required>
+            <br>
+
+
+            <label for="">Date of Birth</label>
+            <input type="date" name="date_of_birth" id="date of birth"  required>
+            <br>
+
+            
+            <label for="">Blood Group</label>
+            <select name="blood-group" id="blood-group" placeholder="Please Enter Your Blood Group"  required> 
+                <option value="A+">A+</option> 
+                <option value="A-">A-</option> 
+                <option value="B+">B+</option> 
+                <option value="B-">B-</option> 
+                <option value="AB+">AB+</option> 
+                <option value="AB-">AB-</option> 
+                <option value="O+">O+</option> 
+                <option value="O-">O-</option> 
+            </select> 
+            <br>
+
+
+            <label for="">Gender</label>
+            <select name="gender" id="gender" placeholder="Enter"  required> 
+                <option value="Male">Male</option> 
+                <option value="Female">Female</option> 
+                <option value="Others">Others</option> 
+            </select> 
+            <br>
+
+            
+            <label for="">District</label>
+            <select name="district" id="district" placeholder="Enter District"  required>
+                <option value="Darjeeling">Darjeeling</option> 
+                <option value="Alipurduar">Alipurduar</option> 
+                <option value="Jalpaiguri">Jalpaiguri</option> 
+                <option value="Cooch Behar">Cooch Behar</option> 
+                <option value="Kalimpong">Kalimpong</option> 
+                <option value="Uttar Dinajpur">Uttar Dinajpur</option> 
+                <option value="Dakshin Dinajpur">Dakshin Dinajpur</option> 
+                <option value="Malda">Malda</option> 
+                <option value="Murshidabad">Murshidabad</option> 
+                <option value="Birbhum">Birbhum</option> 
+                <option value="Paschim Bardhaman">Paschim Bardhaman</option> 
+                <option value="Purba Bardhaman">Purba Bardhaman</option> 
+                <option value="Hooghly">Hooghly</option> 
+                <option value="Bankura">Bankura</option> 
+                <option value="Jhargram">Jhargram</option> 
+                <option value="Purulia">Purulia</option> 
+                <option value="Purba Medinipur">Purba Medinipur</option> 
+                <option value="Paschim Medinipur">Paschim Medinipur</option> 
+                <option value="Howrah">Howrah</option> 
+                <option value="Kolkata">Kolkata</option> 
+                <option value="Nadia">Nadia</option> 
+                <option value="North 24 Parganas">North 24 Parganas</option> 
+                <option value="South 24 Parganas">South 24 Parganas</option> 
+            </select> 
+            <br>
+
+
+
+
+            <button type="submit">Submit</button>
+
+
+        </form>
+        <script src="" async defer></script>
+    </body>
+</html>
